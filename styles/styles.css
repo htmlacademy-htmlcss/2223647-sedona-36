@@ -203,7 +203,7 @@ text-decoration: none;
 
 
 .newsletter {
-    background-image: url(../images/subscribe.jpg);
+    background-image: url("../images/subscribe.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     padding: 96px 258px 104px;
@@ -233,7 +233,7 @@ color: #FFFFFF;
 /*catalog*/
 
 .inner-header {
-background-image: url(../images/filter.jpg);
+background-image: url("../images/filter.jpg");
 background-repeat: no-repeat;
 background-size: 100% auto;
 color: #000000;
@@ -396,9 +396,10 @@ background-color: #F2F2F2;
 background-color: #FFFFFF;
 }
 
-.newsletter-button-catalog, .newsletter-button {
+.newsletter-button-catalog,
+.newsletter-button {
    background: #82B3D3;
-border-radius: 0px 4px 4px 0px;
+border-radius: 0 4px 4px 0;
 border: none;
 align-items: center;
 }
