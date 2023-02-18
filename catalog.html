@@ -42,7 +42,7 @@
         </nav>
       </header>
 
-      <main class="main-container main-inner">
+      <main class="main-container">
         <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -56,7 +56,7 @@
 
           <section class="catalog-products">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="filter-container"><div class="catalog-filter-container"><form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
@@ -75,9 +75,9 @@
                         <input class="control-input" type="checkbox" name="wi-fi">
                         Wi-Fi
                       </label></li>
-                  </fieldset>
+                  </fieldset></div>
 
-                  <fieldset class="catalog-filter-group">
+                  <div class="catalog-filter-container"><fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -99,10 +99,10 @@
                       </label>
                     </li>
                   </ul>
-                </fieldset>
-                <button class="button-apply" type="submit">Применить</button>
+                </fieldset></div>
+                <div class="button-filter"><button class="button-apply" type="submit">Применить</button>
                 <button class="button-reset" type="reset">Сбросить</button>
-              </form>
+              </form></div></div>
             </section>
           </header>
 
@@ -199,9 +199,11 @@
             <a class="pagination-link" href="#">10</a>
           </li>
                     </ul>
-                </section>
+                </section></main>
+
+                <footer class="page-footer">
                 <section class="newsletter-catalog">
-                  <h2 class="page-title-catalog">Подпишитесь на рассылку</h2>
+                  <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
                 <p class="newsletter-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
                   <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
@@ -210,10 +212,8 @@
                   </button>
                 </form>
               </section>
-</main>
 
-      <footer class="page-footer">
-      <section class="footer-social">
+<section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <div class="footer-container"><ul class="footer-social-list">
           <li class="footer-social-item">
