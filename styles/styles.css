@@ -15,13 +15,13 @@
   }
 
   html {
-    height: 100%;
+height: 100%;
   }
 
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    height: 100%;
     min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
@@ -29,11 +29,31 @@ body {
     color: #000000;
     background-color: #FFFFFF;
     }
+
+
 /* Pages */
 
 .page-container {
     margin: 0 auto;
-    width: 1060px;
+    width: 1200px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+
+
+.hero {
+    background-image: url("../img/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 .page-header {
@@ -44,6 +64,7 @@ body {
 .navigaition {
     display: flex;
     width: 1060px;
+    margin: 0 auto;
   }
 
 .navigaition-list {
@@ -79,16 +100,7 @@ body {
     padding: 8px 50px;
 }
 
-.main-container {
-    flex-grow: 1;
-}
-.main-index {
-    background-image: url("../img/index-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    color: #000000;
-    background-color: #FFFFFF;
-}
+
 
 .hero-img {
     display: block;
@@ -116,35 +128,25 @@ color: #333333;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    width: 1060;
     flex-wrap: wrap;
     }
 
-.advantages-item {
-    width: 400;
-    height: 384;
+.advantages-town, .advantages-bridge {
+    display: flex;
+    width: 1200px;
     background-color: #82B3D3;
     color: #FFFFFF;
-    align-items: center;
 }
 
-/* div c преимуществами и картинкой в одном блоке*/
 
-.advantages-town {
+.advantages-title-description {
     display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+    padding-left: 85px;
+    padding-right: 85px;
+
 }
-
-.advantages-bridge {
-    display: flex;
-}
-
-.advantages-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 
 .advantages-item-square,
 .advantages-item-tourists {
@@ -152,11 +154,14 @@ color: #333333;
     color: #000000;
     width: 400px;
     height: 385px;
+
 }
 
 .advantages-item-road {
     background-color: rgba(131, 179, 211, 0.2);
     color: #000000;
+    width: 400px;
+
 }
 
 .advantages-title {
@@ -165,6 +170,8 @@ font-size: 24px;
 line-height: 28px;
 text-align: center;
 text-transform: uppercase;
+width: 175px;
+
 }
 
 .advantages-description {
@@ -172,6 +179,8 @@ text-transform: uppercase;
 font-size: 18px;
 line-height: 21px;
 text-align: center;
+width: 230px;
+
 }
 
 .invite {
@@ -275,13 +284,27 @@ text-decoration: none;
     background-color: #FFFFFF;
 }
 
-.page-title {
+.newsletter-catalog {
+    padding: 96px 258px 104px;
+}
+
+.newsletter-title {
     font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
+}
+
+.newsletter-title-catalog {
+    font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+
 }
 
 .newsletter-description {
@@ -291,6 +314,14 @@ color: #FFFFFF;
     text-align: center;
     color: #FFFFFF;
     }
+
+.newsletter-description-catalog {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
 
 
 
@@ -323,6 +354,16 @@ color: #FFFFFF;
 text-decoration: none;
 }
 
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-filter {
+    display: flex;
+    flex-direction: column;
+}
+
 .catalog-filter-title {
     font-weight: 700;
 font-size: 20px;
@@ -348,6 +389,7 @@ background: #82B3D3;
 border-radius: 4px;
 padding: 8px 50px;
 border: none;
+width: 191px;
 }
 
 .button-reset {
@@ -359,6 +401,9 @@ text-transform: uppercase;
 color: #FFFFFF;
 padding: 8px 50px;
 border-radius: 4px;
+border: none;
+width: 191px;
+background-color: transparent;
 }
 
 .find-guesthouses {
@@ -438,6 +483,7 @@ background: #F2F2F2;
 }
 
 .pagination {
+    display: flex;
     list-style: none;
 }
 
@@ -449,6 +495,9 @@ line-height: 36px;
 text-align: center;
 color: #FFFFFF;
 background-color: #82B3D3;
+border-radius: 4px;
+padding: 12px 25px 13px 23px;
+margin: 8px;
 }
 
 .pagination-current {
