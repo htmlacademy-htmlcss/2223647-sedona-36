@@ -8,11 +8,13 @@
   <body>
     <div class="page-container">
 <header class="page-header">
-  <img class="logo" src="img/logo.svg" width="140" height="70" alt="Логотип Седоны">
   <nav class="navigaition">
     <ul class="navigaition-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Главная</a>
+  <li class="navigation-item">
+    <img class="logo" src="img/logo.svg" width="140" height="70" alt="Логотип Седоны">
+  </li>
+  <li class="navigation-item">
+        <a class="navigation-link navigation-main" href="#">Главная</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="catalog.html">О Седоне</a>
@@ -23,15 +25,14 @@
     </ul>
     <ul class="navigaition-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Поиск</span>
+        <a class="navigation-link visually-hidden user-search" href="#">
+          Поиск
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Избранное</span>
+        <a class="navigation-link visually-hidden user-favorite" href="#">
+          Избранное</a>
           <span class="notification-badge">12</span>
-        </a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link i-want" href="#">Хочу сюда!</a>
@@ -82,19 +83,19 @@
 <ul class="services-list">
     <li class="services-item">
       <p class="services-title">Жильё</p>
-            <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
+            <p class="services-description services-description-home">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино</p>
           </li>
           <li class="services-item services-item-food">
             <p class="services-title">Еда</p>
-                  <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
                 <li class="services-item">
                   <p class="services-title">Сувениры</p>
-                        <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+                        <p class="services-description">Не только китайского,<br> но и настоящего местного производства!</p>
                       </li>
                     </ul>
 </section>
-<section class="guesthouses-search">
+<section class="guesthouses-search" data-test="search" id="search">
   <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
   <p class="intresting-offer"><strong >Заинтересовались?</strong></p>
   <p class="search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -107,7 +108,7 @@
   <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
 <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-  <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+  <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
   <button class="button newsletter-button" type="submit">
     Подписаться
   </button>
@@ -118,24 +119,24 @@
   <h2 class="visually-hidden">Социальные сети</h2>
   <div class="footer-container"><ul class="footer-social-list">
     <li class="footer-social-item">
-      <a class="button" href="https://vk.com/htmlacademy">
-        <span class="visually-hidden">Вконтакте</span>
+      <a class="button visually-hidden" href="https://vk.com/htmlacademy">
+        Вконтакте
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="button" href="https://t.me/htmlacademy">
-        <span class="visually-hidden">Телеграм</span>
+      <a class="button visually-hidden" href="https://t.me/htmlacademy">
+        Телеграм
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-        <span class="visually-hidden">Ютуб</span>
+      <a class="button visually-hidden" href="https://www.youtube.com/user/htmlacademyru">
+        Ютуб
       </a>
     </li>
 </ul>
 <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-  <img class="html-academy-logo" src="img/html-academy-logo.svg" alt="Логотиа HTML academy"></a>
+  <img class="html-academy-logo" src="img/html-academy-logo.svg" width="115" height="33" alt="Логотиа HTML academy"></a>
 </div>
 </section>
 </footer>
